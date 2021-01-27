@@ -1,0 +1,422 @@
+*{
+    margin: 0; 
+    padding: 0;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:#f1f0ec;
+    font-weight: 300;
+    background-color: #232323;
+}
+
+a{
+    text-decoration: none;
+    color:#f1f0ec;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#f1f0ec;
+}
+
+h1, h2, h5{
+    font-family: 'Antic Slab', serif;
+    font-weight: bolder;
+
+}
+
+/* defined classes */
+
+/* creates a  polaroid-like frame */
+.polaroid-frame{
+    margin:5% 2%;
+    padding: 20px 20px 0 20px;
+    width: 265px;
+    height:400px;
+    background-color:#ffffff;
+    box-shadow: 0 0 10px rgba(105, 104, 104, 0.753);
+}
+
+/* Inserting a collapsed row between two flex items will make 
+ the flex item that comes after it break to a new row */ 
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+
+/* Inserts partial border after heading  */
+.double-border-after:after{
+    content:""; 
+    display: block;
+    width: 60px; 
+    padding: 20px 0;
+    border-bottom: 7px double #ff9900 ;
+}
+
+/* redefined padding, color, and font-weight */
+.row{
+    width: 100vw;
+    padding:50px 70px;
+    font-weight: bold;
+}
+
+/* removes default padding for internal rows */
+.internal-row{
+    padding:0; 
+}
+
+/* a row with a light background */
+.row-light{
+    color: #0b1216;
+    background-color:#f1f0ec; 
+}
+
+/* a row with a dark background */
+.row-dark{
+    color: #f1f0ec;
+    background-color: #232323;
+}
+
+/* e.g.: SPECIAL OFFERS/MENU/etc */
+.section-title{
+    padding:50px 0;
+}
+
+
+/* We bring you special offers from our family.
+ Do not miss out on exclusive taste! */
+ .section-title p{
+    padding: 20px 0;
+}
+
+/* special offers link */
+.section-link{
+    background-color: #ff9900;
+    padding: 15px 20px;
+}
+
+.section-link:hover{
+    background-color: #fdc26a;
+    box-shadow: 0 0 8px rgba(105, 104, 104, 0.562);
+    transition: background-color ease-in 0.2s;
+}
+
+/* sets the name of the image title */
+.pic-name{
+    padding: 15px 0 5px 0;
+    color:#232323; 
+}
+
+/* sets the cost */
+.pic-cost{
+    color:#ff9900;
+    font-size: 2em;
+}
+
+/* sets the description of the image */
+.pic-description{
+    font-weight:lighter;
+    font-size: 12px;
+    color:#232323; 
+}
+
+/*  */
+/*  */
+/* horizonatl navigation bar fixed at the top  */
+header .navbar{
+    background-color: #050505e8;
+}
+
+header #logo-img{
+    background: url("images/logo1.png") no-repeat;
+    width: 80px;
+    height: 80px;
+    filter:brightness(85%);
+}
+
+/* Restaurant name */
+header .navbar-brand h1{
+    color: #cfcfcf;
+    font-size:1.5em;
+    margin: 7px 10px 0px 10px;
+}
+
+/* Kosher Certification */
+header .navbar-brand #kosher-text{
+    width: fit-content;
+    margin: 0 10px;
+    font-size: 0.7em;
+    color: rgb(255, 224, 123);
+}
+
+/* Kosher Certification icon */
+header .navbar-brand #kosher-icon{
+    width: 15px;
+    height: 15px;
+}
+
+/* navbar content at the top of the page */
+header .navbar-nav{
+    font-size: 16px;
+}
+
+header .nav-link{
+    width: fit-content;
+    text-align: center;
+}
+
+/* items glow in hover mode */
+header .nav-link:hover{
+    filter: drop-shadow(0 0 4px white); 
+}
+
+header #social-media-icon{
+    width: 19px;
+    height: 19px;
+}
+
+#main-image.row{
+    padding:0;
+    position: relative;
+}
+
+#main-image img{
+    padding-top:80px;
+}
+
+#slogan{
+    position:absolute;
+    top:25%;
+    left:100px;
+    font-size:6em;
+    text-shadow: 0 5px 10px #1d1d1de3;
+}
+
+/* special offers images */
+div #special-offers-img.col-md-6{
+    margin-bottom: 30px;
+}
+
+#special-offers-img img{
+    width: 225px;
+    height: 225px;
+}
+
+/* aligns the text under the offer images */ 
+#special-offers-img p{
+    text-align: center;
+    margin:0;
+}
+
+#special-offers #reviews{
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+    width: 70%;
+}
+
+#special-offers #star-rating{
+    width:100vw;
+    border-top: 3px double #ffc46c ;
+    padding:20px;
+}
+
+#special-offers #star-rating .checked{
+    color:#ff9900;
+}
+
+#menu #menu-text{
+    padding: 20px 0 0 0;
+    border-top: 3px double #ffc46c ;
+    text-align: center;
+}
+
+/* centers the double border */
+#menu #menu-text .double-border-after:after{
+    margin: auto; 
+}
+
+#menu #special-offers-img{
+    height: auto;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+#menu #special-offers-img img{
+    width:200px; 
+    height: 200px; 
+}
+
+#menu #special-offers-img .polaroid-frame{
+    width: 240px;
+    height: 375px;
+    background-color: #f1f0ec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.733);
+}
+
+#location.row{
+    height: 300px;
+    padding:0;
+    position: relative;
+}
+
+#location iframe{
+    width:100vw;
+    margin:0;
+    height:300px;
+    position: absolute;
+}
+
+#location .overlay {
+    background-color: #0c0c0cd7;
+    width:100vw;
+    height:300px;
+    position: absolute;
+}
+
+.overlay:hover{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* VISIT US */
+#location h2{
+    font-weight: lighter;
+    position: absolute;
+    color:#f1f0ec; 
+    text-shadow: 0 3px 8px #000000af;
+    top: 50%; 
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+
+footer div.row{
+    padding: 30px;
+    color:rgb(154, 159, 163);
+    font-weight: 500;
+    font-size: smaller;
+}
+
+#contacts{
+    font-size: larger;
+}
+
+footer h5{
+    padding:10px 0;
+}
+
+footer ul li{
+    padding:5px 0;
+}
+
+footer a:hover{
+    filter: drop-shadow(0 0 4px rgba(194, 193, 193, 0.87)); 
+    transition: filter 0.1s ease-in;
+}
+
+/* Font-size reduced by 90% for tablet screens */
+@media (min-width: 576px) and (max-width: 768px){
+    *{
+        font-size:95%;
+    }
+
+    .pic-name{
+        font-size: 1.5em;
+    }
+
+    #main-image img{
+        padding-top:60px;
+        width: 1000px;/* height of container */
+        height:596px;/* width of container */ 
+        object-fit: cover;
+        object-position: 20% 10%; /* try 20px 10px */ 
+    }
+    
+    #slogan{
+        left:50px;
+    }
+
+    #menu #special-offers-img .polaroid-frame, #special-offers #special-offers-img .polaroid-frame{
+        margin: 5%;
+        width: 215px;
+        height:365px;
+    }
+
+    #menu #special-offers-img img, #special-offers #special-offers-img img{
+        width: 175px;
+        height: 175px;
+    }
+}
+
+/* font-size reduced for mobile screens: sets font-size to small, reduces size of kosher icon,
+ and aligns navbar toggle content to the left */
+@media (max-width: 575px){
+    *{
+        font-size: small;
+    }
+
+    div.row{
+        padding:30px 20px;
+    }
+
+    .navbar-brand sup #kosher-icon{
+        width: 12px;
+        height: 12px;
+    }
+
+    .nav-link{
+        text-align: left;
+        margin-left:10px
+    }
+
+    #main-image img{
+        padding-top:50px;
+        padding-top:60px;
+        width: 700px;/* height of container */
+        height:417px;/* width of container */ 
+        object-fit: cover;
+        object-position: 50% 10%; /* try 20px 10px */ 
+    }
+    
+    #slogan{
+        font-size: 4em;
+        left:10px;
+    }
+    
+    .section-title{
+        padding:0;
+    }
+
+    #special-offers-text{
+        margin-bottom: 5%;
+    }
+
+    .double-border-after:after{
+        padding:5px 0 0 0;
+    }
+
+    .section-link{
+        font-size: smaller;
+        padding: 12px 10px;
+    }
+
+    #menu #menu-text div p{
+        padding:5px 0;
+    }
+
+    #menu #special-offers-img .polaroid-frame, #special-offers #special-offers-img .polaroid-frame{
+        width: 190px;
+        height:325px;
+    }
+
+    #menu #special-offers-img img, #special-offers #special-offers-img img{
+        width:150px;
+        height:150px;
+    }
+}
